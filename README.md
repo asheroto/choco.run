@@ -1,3 +1,4 @@
+
 # Chocolatey installs made faster...
 In a hurry? Bad memory? Just want to get some Chocolatey goodness in your machine?
 
@@ -7,14 +8,14 @@ User guide to **choco.run** in three commands:
 
 Open PowerShell (as an Administrator) and run the following...
  1. `wget choco.run -out choco.cmd`
- 2. `type .\choco.cmd`(safety check the download is correct)
+ 2. `type .\choco.cmd`(safety check the download is correct, skipped in screenshot)
  3. `.\choco.cmd`
+ 
+![expected-output](https://github.com/asheroto/choco.run/blob/master/expected-output-no-safety-check.jpg?raw=true)
+ 
+Not skipping step 2 will look like [this](https://github.com/asheroto/choco.run/blob/master/expected-output1.jpg), and then [this](https://github.com/asheroto/choco.run/blob/master/expected-output2.jpg).
 
-![expected-output1.jpg](https://github.com/asheroto/choco.run/blob/master/expected-output1.jpg?raw=true)
-
-![expected-output2.jpg](https://github.com/asheroto/choco.run/blob/master/expected-output2.jpg?raw=true)
-
-I hope all of you have enjoyed this extensive user guide.
+**I hope all of you have enjoyed this extensive user guide :D**
 
 # The choco.run Inquisition
 
@@ -48,4 +49,4 @@ For the safety check, the output should look like [this](https://github.com/ashe
 - **How can I support this project?**
 - 	- **Star** this project on GitHub so I see someone is out there
 	- I'm not trying to make a profit, just make things easier for everyone
-	- If you do want to [help pay for the domain](https://www.coinpayments.net/$asheroto) that would be awesome, even if it's just $1 it would be helpful! All donations will go towards renewing the domain. If the amount surpasses the domain renewal cost (due to popularity) I will coordinate an effort to improve upon the original idea.
+	- If you *do* want to [help pay for the domain](https://www.coinpayments.net/$asheroto) that would be awesome, even if it's just $1 it would be helpful! All donations will go towards renewing the domain. If the amount surpasses the domain renewal cost (due to popularity) I will coordinate an effort to improve upon the original idea.
