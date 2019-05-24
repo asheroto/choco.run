@@ -10,6 +10,8 @@ Open PowerShell (as an Administrator) and run the following...
  2. `type .\choco.cmd`(safety check the download is correct)
  3. `.\choco.cmd`
 
+![expected-output1.jpg](https://github.com/asheroto/choco.run/blob/master/expected-output1.jpg?raw=true)
+
 I hope all of you have enjoyed this extensive user guide.
 
 # The choco.run Inquisition
