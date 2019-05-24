@@ -12,6 +12,8 @@ Open PowerShell (as an Administrator) and run the following...
 
 ![expected-output1.jpg](https://github.com/asheroto/choco.run/blob/master/expected-output1.jpg?raw=true)
 
+![expected-output2.jpg](https://github.com/asheroto/choco.run/blob/master/expected-output2.jpg?raw=true)
+
 I hope all of you have enjoyed this extensive user guide.
 
 # The choco.run Inquisition
