@@ -13,8 +13,6 @@ Open PowerShell (as an Administrator) and run the following...
  
 ![expected-output](https://github.com/asheroto/choco.run/blob/master/expected-output-no-safety-check.jpg?raw=true)
  
-Not skipping step 2 will look like [this](https://github.com/asheroto/choco.run/blob/master/expected-output1.jpg), and then [this](https://github.com/asheroto/choco.run/blob/master/expected-output2.jpg).
-
 **I hope all of you have enjoyed this extensive user guide :D**
 
 # The choco.run Inquisition
