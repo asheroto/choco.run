@@ -15,3 +15,4 @@ echo.
 echo Presing enter will close this Window and delete the installation script (%~nx0)
 pause
 erase \%~nx0
+exit && exit
