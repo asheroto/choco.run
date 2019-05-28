@@ -13,5 +13,6 @@ echo -AND REOPEN A NEW WINDOW FOR INSTALL TO WORK-
 echo ---------------------------------------------
 echo.
 echo.
-echo Presing enter will close this Window
+echo Presing enter will close this Window and delete the installation script (%~nx0)
 pause
+erase %~nx0
