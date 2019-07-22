@@ -1,18 +1,18 @@
 @echo off
 echo.
 echo choco.run says hello...
-echo Safety reminder: did you check the file with 'type .\%~nx0' first?
-timeout /t 10
 echo.
 cd\windows\temp
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin";
 echo.
 echo choco.run is done
+echo.
 echo ---------------------------------------------
 echo ------YOU MUST CLOSE OUT OF THIS WINDOW------
 echo -AND REOPEN A NEW WINDOW FOR INSTALL TO WORK-
 echo ---------------------------------------------
 echo.
-echo Pressing enter will DELETE .\$~nx0 to avoid future command conficts.
-echo To keep script, close out of this window now, otherwise, press enter.
+echo YOU MUST DELETE choco.cmd IN ORDER FOR
+echo CHOCOLATEY'S "choco" COMMAND TO WORK
+echo.
 pause
