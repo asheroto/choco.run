@@ -4,7 +4,7 @@ In a hurry? Bad memory? Just want to get some Chocolatey goodness in your machin
 
 ***WELCOME HOME!***
 
-User guide to **choco.run** in three commands:
+User guide to **choco.run** in four commands:
 
 Open PowerShell (as an Administrator) and run the following...
  1. `wget choco.run -out choco.cmd`
