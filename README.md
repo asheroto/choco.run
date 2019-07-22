@@ -10,6 +10,7 @@ Open PowerShell (as an Administrator) and run the following...
  1. `wget choco.run -out choco.cmd`
  2. `type .\choco.cmd`(safety check the download is correct, skipped in screenshot)
  3. `.\choco.cmd`
+ 4. Delete choco.cmd by running `erase .\choco.cmd` or else Chocolatey's **choco** command won't work
  
 ![expected-output](https://github.com/asheroto/choco.run/blob/master/expected-output-no-safety-check.jpg?raw=true)
  
