@@ -31,8 +31,6 @@ But it's really no magic...
 `-out c.cmd`|saves that as a batch script
 `.\c.cmd`|launches that script
 
-For the safety check, the output should look like [this](https://github.com/asheroto/choco.run/blob/master/expected-output1.jpg) before you run **choco.cmd**, and similar to [this](https://github.com/asheroto/choco.run/blob/master/expected-output2.jpg) after you run it (normal choco install).
-
 ## Q&A
 - **How long has wget been an alias of Invoke-WebRequest? Will it work on my machine?**
 	- It's been an alias since at least 2016, but I'm not sure exactly when they added it before then
