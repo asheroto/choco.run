@@ -11,7 +11,7 @@ Open PowerShell (as an Administrator) and run the following...
  2. `type .\c.cmd`(safety check the download is correct, skipped in screenshot)
  3. `.\c.cmd`
  
-![expected-output](https://github.com/asheroto/choco.run/blob/master/expected-output-no-safety-check.jpg?raw=true)
+![expected-output](https://github.com/asheroto/choco.run/blob/master/expected-output.jpg?raw=true)
  
 **I hope all of you have enjoyed this extensive user guide :D**
 
