@@ -12,7 +12,4 @@ echo ------YOU MUST CLOSE OUT OF THIS WINDOW------
 echo -AND REOPEN A NEW WINDOW FOR INSTALL TO WORK-
 echo ---------------------------------------------
 echo.
-echo YOU MUST DELETE choco.cmd IN ORDER FOR
-echo CHOCOLATEY'S "choco" COMMAND TO WORK
-echo.
 pause
