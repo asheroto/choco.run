@@ -4,13 +4,12 @@ In a hurry? Bad memory? Just want to get some Chocolatey goodness in your machin
 
 ***WELCOME HOME!***
 
-User guide to **choco.run** in four commands:
+User guide to **choco.run** in three commands:
 
 Open PowerShell (as an Administrator) and run the following...
- 1. `wget choco.run -out choco.cmd`
- 2. `type .\choco.cmd`(safety check the download is correct, skipped in screenshot)
- 3. `.\choco.cmd`
- 4. Delete choco.cmd by running `erase .\choco.cmd` or else Chocolatey's **choco** command won't work
+ 1. `wget choco.run -out c.cmd`
+ 2. `type .\c.cmd`(safety check the download is correct, skipped in screenshot)
+ 3. `.\c.cmd`
  
 ![expected-output](https://github.com/asheroto/choco.run/blob/master/expected-output-no-safety-check.jpg?raw=true)
  
@@ -29,14 +28,15 @@ But it's really no magic...
 |----------------|-------------------------------
 `wget`|alias of Invoke-WebRequest
 `choco.run`|redirects to [this text](https://raw.githubusercontent.com/asheroto/choco.run/master/install)
-`-out choco.cmd`|saves that as a batch script
-`choco.cmd`|launches that script
+`-out c.cmd`|saves that as a batch script
+`.\c.cmd`|launches that script
 
 For the safety check, the output should look like [this](https://github.com/asheroto/choco.run/blob/master/expected-output1.jpg) before you run **choco.cmd**, and similar to [this](https://github.com/asheroto/choco.run/blob/master/expected-output2.jpg) after you run it (normal choco install).
 
 ## Q&A
 - **How long has wget been an alias of Invoke-WebRequest? Will it work on my machine?**
 	- It's been an alias since at least 2016, but I'm not sure exactly when they added it before then
+	- Some machines don't let you use -out so you must instead use -outfile
 - **How much do you make off of this?**
 	- Exactly $0 minus $18.88/year for the domain
 - **Advertising revenue? Free chocolate?**
