@@ -14,7 +14,19 @@ Open PowerShell (as an Administrator) and run the following...
  
 **I hope everyone has enjoyed this extensive user guide :D**
 
-If you get an error message regarding `-out`, run the above commands but replace `-out` with `-outfile`.
+# Alternate method - disable Chocolatey prompts
+
+This method installs Chocolatey but also disables the Yes/No prompts when installing, upgrading, or uninstalling.
+
+Open PowerShell (as an Administrator) and run the following...
+ 1. `wget alt.choco.run -out c.cmd`
+ 2. `.\c.cmd`
+ 
+ # Troubleshooting
+ 
+ If you get an error message regarding `-out`, run the above commands but replace `-out` with `-outfile`.
+ 
+ If you still have an issue, open up a web browser and navigate to [manual.choco.run](http://manual.choco.run). This is the exact command displayed on the Chocolatey website to install Chocolatey. Simply copy and paste the command into PowerShell as an Administrator. 
 
 # The choco.run Inquisition
 
