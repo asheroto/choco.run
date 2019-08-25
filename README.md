@@ -4,16 +4,15 @@ In a hurry? Bad memory? Just want to get some Chocolatey goodness in your machin
 
 ***WELCOME HOME!***
 
-User guide to **choco.run** in three commands:
+User guide to **choco.run** in two commands:
 
 Open PowerShell (as an Administrator) and run the following...
  1. `wget choco.run -out c.cmd`
- 2. `type .\c.cmd`(safety check the download is correct, skipped in screenshot)
- 3. `.\c.cmd`
+ 2. `.\c.cmd`
  
 ![expected-output](https://github.com/asheroto/choco.run/blob/master/expected-output.jpg?raw=true)
  
-**I hope all of you have enjoyed this extensive user guide :D**
+**I hope everyone has enjoyed this extensive user guide :D**
 
 # The choco.run Inquisition
 
@@ -28,7 +27,6 @@ But it's really no magic...
 |----------------|-------------------------------
 `wget`|alias of Invoke-WebRequest
 `choco.run`|redirects to [this text](https://raw.githubusercontent.com/asheroto/choco.run/master/install)
-`-out c.cmd`|saves that as a batch script
 `.\c.cmd`|launches that script
 
 ## Q&A
