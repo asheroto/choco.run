@@ -14,6 +14,8 @@ Open PowerShell (as an Administrator) and run the following...
  
 **I hope everyone has enjoyed this extensive user guide :D**
 
+If you get an error message regarding `-out`, run the above commands but replace `-out` with `-outfile`.
+
 # The choco.run Inquisition
 
 Now you may be asking yourself...
@@ -32,7 +34,7 @@ But it's really no magic...
 ## Q&A
 - **How long has wget been an alias of Invoke-WebRequest? Will it work on my machine?**
 	- It's been an alias since at least 2016, but I'm not sure exactly when they added it before then
-	- Some machines don't let you use -out so you must instead use -outfile
+	- Some machines don't let you use `-out` so you must instead use `-outfile`
 - **How much do you make off of this?**
 	- Exactly $0 minus $18.88/year for the domain
 - **Advertising revenue? Free chocolate?**
