@@ -10,7 +10,7 @@ Open PowerShell (as an Administrator) and run the following...
  1. `wget choco.run -out c.cmd`
  2. `.\c.cmd`
  
-![expected-output](https://github.com/asheroto/choco.run/blob/master/expected-output.jpg?raw=true)
+![expected-output](https://github.com/asheroto/choco.run/blob/master/choco.run-install.gif?raw=true)
  
 **I hope everyone has enjoyed this extensive user guide :D**
 
