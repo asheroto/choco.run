@@ -2,6 +2,8 @@
 # Chocolatey installs made faster...
 In a hurry? Bad memory? Just want to get some Chocolatey goodness in your machine?
 
+Choco.run makes installing Chocolatey easy!
+
 ***WELCOME HOME!***
 
 User guide to **choco.run** in two commands:
