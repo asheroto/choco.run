@@ -49,6 +49,7 @@ But it's really no magic...
 |----------------|-------------------------------
 `wget`|alias of Invoke-WebRequest
 `choco.run`|redirects to [this text](https://raw.githubusercontent.com/asheroto/choco.run/master/install)
+`-o` or `-OutFile`|directs the output to a file you specify (`c.cmd` in the above case)
 `.\c.cmd`|launches that script
 
 ## Q&A
