@@ -1,4 +1,5 @@
 
+
 # Chocolatey installs made faster...
 In a hurry? Bad memory? Just want to get some Chocolatey goodness in your machine?
 
@@ -46,6 +47,9 @@ But it's really no magic...
 `.\c.cmd`|launches that script
 
 ## Q&A
+- **Error: Could not create SSL-TLS Secure Channel**
+	- Sometimes this occurs on older versions of Windows
+	- To fix, go [here](https://raw.githubusercontent.com/asheroto/choco.run/master/Fix%20Could%20not%20Create%20SSL-TLS%20Secure%20Channel.reg) and save the text as **Fix.reg**, then double-click **Fix.reg** and click **Yes** to apply the fix to the computer
 - **How long has wget been an alias of Invoke-WebRequest? Will it work on my machine?**
 	- It's been an alias since at least 2016, but I'm not sure exactly when they added it before then
 	- Some machines don't let you use `-out` so you must instead use `-outfile`
