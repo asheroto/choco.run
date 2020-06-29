@@ -35,6 +35,7 @@ Open PowerShell (as an Administrator) and run the following...
  - **Error: Could not create SSL-TLS Secure Channel**
 	- Sometimes this occurs on older versions of Windows
 	- To fix, go [here](https://raw.githubusercontent.com/asheroto/choco.run/master/Fix%20Could%20not%20Create%20SSL-TLS%20Secure%20Channel.reg) and save the text as **Fix.reg**, then double-click **Fix.reg** and click **Yes** to apply the fix to the computer. Then run **.\c.cmd** in PowerShell again.
+	- You may need to [update your root certificates](https://asher.tools/root-certificate-updater) if the above fix doesn't work and you are using an older OS.
 
 # The choco.run Inquisition
 
