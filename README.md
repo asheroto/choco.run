@@ -68,4 +68,3 @@ But it's really no magic...
 - **How can I support this project?**
 - 	- **Star** this project on GitHub so I see someone is out there
 	- I'm not trying to make a profit, just make things easier for everyone
-	- If you *do* want to [help pay for the domain](https://www.coinpayments.net/$asheroto) that would be awesome, even if it's just $1 it would be helpful! All donations will go towards renewing the domain. If the amount surpasses the domain renewal cost (due to popularity) I will coordinate an effort to improve upon the original idea.
