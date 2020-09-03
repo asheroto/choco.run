@@ -7,7 +7,7 @@ Choco.run makes installing Chocolatey easy!
 
 ***WELCOME HOME!***
 
-User guide to **choco.run** in two commands:
+User guide to **choco.run** in two commands (or technically 3 if you take the safety step):
 
 Open PowerShell (as an Administrator) and run the following...
  1. `wget choco.run -out c.cmd`
