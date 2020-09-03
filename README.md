@@ -11,7 +11,7 @@ User guide to **choco.run** in two commands:
 
 Open PowerShell (as an Administrator) and run the following...
  1. `wget choco.run -out c.cmd`
- 2. *Safety Measure:* `type .\c.cmd`
+ 2. `type .\c.cmd` (as a safety measure)
  3. `.\c.cmd`
  
 ![expected-output](https://github.com/asheroto/choco.run/blob/master/choco.run-install.gif?raw=true)
