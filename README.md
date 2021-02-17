@@ -9,7 +9,7 @@ Choco.run makes installing Chocolatey easy!
 
 User guide to **choco.run** in two commands:
 
-Open PowerShell (as an Administrator) and run the following...
+Run in PowerShell (as an Administrator):
  1. `wget choco.run -out c.cmd`
  2. `.\c.cmd`
  
@@ -21,9 +21,20 @@ Open PowerShell (as an Administrator) and run the following...
 
 This method installs Chocolatey but also disables the Yes/No prompts when installing, upgrading, or uninstalling.
 
-Open PowerShell (as an Administrator) and run the following...
+Run in PowerShell (as an Administrator):
  1. `wget alt.choco.run -out c.cmd`
  2. `.\c.cmd`
+
+# Alternate method, without choco.run
+
+This method works because nowadays Windows has NuGet and PSGallery as package providers.
+
+Run in PowerShell (as an Administrator):
+
+```
+Install-PackageProvider -Name ChocolateyGet
+Install-Package -Name Chocolatey -Provider ChocolateyGet
+```
  
  # Troubleshooting
  
