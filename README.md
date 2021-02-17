@@ -7,12 +7,11 @@ Choco.run makes installing Chocolatey easy!
 
 ***WELCOME HOME!***
 
-User guide to **choco.run** in two commands (or technically 3 if you take the safety step):
+User guide to **choco.run** in two commands:
 
 Open PowerShell (as an Administrator) and run the following...
  1. `wget choco.run -out c.cmd`
- 2. `type .\c.cmd` (as a safety measure to check the downloaded script, this is optional)
- 3. `.\c.cmd`
+ 2. `.\c.cmd`
  
 ![expected-output](https://github.com/asheroto/choco.run/blob/master/choco.run-install.gif?raw=true)
  
