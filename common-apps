@@ -1,1 +1,1 @@
-choco upgrade autoruns regjump autohotkey brave ccleaner classic-shell lockhunter hashcheck processhacker winrar curl wget microsoft-windows-terminal pwsh vscode dotnetfx imageresizerapp peazip vlc vcredist-all
+choco upgrade autoruns regjump autohotkey brave ccleaner lockhunter hashcheck processhacker curl wget microsoft-windows-terminal pwsh vscode dotnetfx imageresizerapp peazip vlc vcredist-all
