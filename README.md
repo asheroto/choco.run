@@ -40,7 +40,7 @@ Install-Package -Name Chocolatey -Provider ChocolateyGet
  
  If you get an error message regarding `-out`, run the above commands but replace `-out` with `-outfile`.
  
- If you still have an issue, open up a web browser and navigate to [manual.choco.run](http://manual.choco.run). This is the exact command displayed on the Chocolatey website to install Chocolatey. Simply copy and paste the command into PowerShell as an Administrator. 
+ If you still have an issue, open up a web browser and navigate to [manual.choco.run](http://manual.choco.run). This is a link to the Chocolatey setup instructions page.
  
  ---
  - **Error: Could not create SSL-TLS Secure Channel**
