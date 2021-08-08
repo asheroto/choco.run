@@ -74,5 +74,5 @@ But it's really no magic...
     -   Although you would almost always be okay using this, I always recommend to CHECK what you downloaded from **choco.run** (step 2 in the user guide) before you run commands as an Administrator! But then again, do you ever check chocolatey.org when you run choco commands as Administrator?
     -   And besides, my supporters support this project handsomely...
 -   **How can I support this project?**
--       - **Star** this project on GitHub so I see someone is out there
-    -   I'm not trying to make a profit, just make things easier for everyone
+	- **Star** this project on GitHub so I see someone is out there
+	- I'm not trying to make a profit, just make things easier for everyone. If you'd like to donate anyway click the Ko-fi link at the top of this readme.
