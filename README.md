@@ -6,6 +6,8 @@ In a hurry? Bad memory? Just want to get some Chocolatey goodness in your machin
 
 Choco.run makes installing Chocolatey easy!
 
+You can access this repository at any time by visiting https://git.io/choco.run
+
 **_WELCOME HOME!_**
 
 User guide to **choco.run** in two commands:
