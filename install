@@ -1,9 +1,9 @@
-@echo off
+echo off
 echo.
 echo choco.run says hello...
 echo.
 cd\windows\temp
-@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 echo.
 echo choco.run is done
 echo.
@@ -13,3 +13,4 @@ echo -AND REOPEN A NEW WINDOW FOR INSTALL TO WORK-
 echo ---------------------------------------------
 echo.
 pause
+echo on
