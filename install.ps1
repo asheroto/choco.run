@@ -25,19 +25,27 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
 $originalPath = Get-Location
 Set-Location "$env:SystemRoot\Temp"
 
-# Install Chocolatey
-Write-Output "Installing Chocolatey..."
-$installCommand = "[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
-Invoke-Expression -Command $installCommand | Out-Null
+# Install Chocolatey in a background job
+$job = Start-Job -ScriptBlock {
+    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+    iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+}
 
-# Notify the user that Chocolatey has been installed
-Write-Output "Chocolatey has been installed!"
+# Wait for the installation job to complete
+Write-Output "Installing Chocolatey in the background..."
+Wait-Job $job | Out-Null
 
-# Notify the user that they can now use choco in this window
-Write-Output ""
-Write-Output "-------------------------------------------------------------"
-Write-Output "You can now use the 'choco' command in this window!"
-Write-Output "-------------------------------------------------------------"
+# Verify if Chocolatey is installed
+$chocoCommand = Get-Command 'choco' -ErrorAction SilentlyContinue
+if ($chocoCommand) {
+    Write-Output "Chocolatey has been installed!"
+    Write-Output ""
+    Write-Output "-------------------------------------------------------------"
+    Write-Output "You can now use the 'choco' command in this window!"
+    Write-Output "-------------------------------------------------------------"
+} else {
+    Write-Output "An error may have occurred. 'choco' command is not accessible."
+}
 
 # Return to the original directory
 Set-Location $originalPath

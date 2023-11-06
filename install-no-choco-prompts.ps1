@@ -24,8 +24,8 @@ Set-Location "$env:SystemRoot\Temp"
 
 # Install Chocolatey
 Write-Output "Installing Chocolatey..."
-$installCommand = "[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
-Invoke-Expression -Command $installCommand | Out-Null
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 # Disable confirmation prompts
 Write-Output "Disabling confirmation prompts..."
