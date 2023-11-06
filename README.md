@@ -1,25 +1,20 @@
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/asheroto)
+[![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/asheroto/choco.run)](https://github.com/asheroto/choco.run/releases)
+[![GitHub Downloads - All Releases](https://img.shields.io/github/downloads/asheroto/choco.run/total)](https://github.com/asheroto/choco.run/releases)
+[![GitHub Sponsor](https://img.shields.io/github/sponsors/asheroto?label=Sponsor&logo=GitHub)](https://github.com/sponsors/asheroto?frequency=one-time&sponsor=asheroto)
+<a href="https://ko-fi.com/asheroto"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Ko-Fi Button" height="20px"></a>
+<a href="https://www.buymeacoffee.com/asheroto"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=seb6596&button_colour=FFDD00&font_colour=000000&font_family=Lato&outline_colour=000000&coffee_colour=ffffff](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=asheroto&button_colour=FFDD00&font_colour=000000&font_family=Lato&outline_colour=000000&coffee_colour=ffffff)" height="40px"></a>
 
-# Chocolatey installs made faster...
+# Install Chocolatey in one simple line
 
 In a hurry? Bad memory? Just want to get some Chocolatey goodness in your machine?
 
 Choco.run makes installing Chocolatey easy!
 
-You can access this repository at any time by visiting https://git.io/choco.run
-
-**_WELCOME HOME!_**
-
-User guide to **choco.run** in two commands:
-
 Run in PowerShell (as an Administrator):
 
-1.  `wget choco.run -out c.cmd`
-2.  `.\c.cmd`
-
-![expected-output](https://github.com/asheroto/choco.run/blob/master/choco.run-install.gif?raw=true)
-
-**I hope everyone has enjoyed this extensive user guide :D**
+```powershell
+iwr choco.run | iex
+```
 
 # Alternate method - disable Chocolatey prompts
 
@@ -27,54 +22,26 @@ This method installs Chocolatey but also disables the Yes/No prompts when instal
 
 Run in PowerShell (as an Administrator):
 
-1.  `wget alt.choco.run -out c.cmd`
-2.  `.\c.cmd`
+```powershell
+iwr alt.choco.run | iex
+```
 
 # Alternate method, without choco.run
 
-This method works because nowadays Windows has NuGet and PSGallery as package providers.
-
 Run in PowerShell (as an Administrator):
 
-```
-Install-PackageProvider -Name ChocolateyGet
-Install-Package -Name Chocolatey -Provider ChocolateyGet
+```powershell
+Install-PackageProvider -Name "NuGet" -Force
+Set-PSRepository -Name "PSGallery" -InstallationPolicy Trusted
+Install-Module -Name "Chocolatey"
 ```
 
 # Troubleshooting
-
-If you get an error message regarding `-out`, run the above commands but replace `-out` with `-outfile`.
 
 If you still have an issue, open up a web browser and navigate to [manual.choco.run](http://manual.choco.run). This is a link to the Chocolatey setup instructions page.
 
 # The choco.run Inquisition
 
-Now you may be asking yourself...
-
 ![meme](https://raw.githubusercontent.com/asheroto/choco.run/master/meme.jpg)
 
-But it's really no magic...
-
-| Command            | Description                                                                                   |
-| ------------------ | --------------------------------------------------------------------------------------------- |
-| `wget`             | alias of Invoke-WebRequest                                                                    |
-| `choco.run`        | redirects to [this text](https://raw.githubusercontent.com/asheroto/choco.run/master/install) |
-| `-o` or `-OutFile` | directs the output to a file you specify (`c.cmd` in the above case)                          |
-| `.\c.cmd`          | launches that script                                                                          |
-
-## Q&A
-
--   **How long has wget been an alias of Invoke-WebRequest? Will it work on my machine?**
-    -   It's been an alias since at least 2016, but I'm not sure exactly when they added it before then
-    -   Some machines don't let you use `-out` so you must instead use `-outfile`
--   **How much do you make off of this?**
-    -   Exactly $0 minus $18.88/year for the domain
--   **Advertising revenue? Free chocolate?**
-    -   Nope, no revenue
-    -   Only discounted uneaten Halloween chocolate...
--   **Is this a security risk?**
-    -   Although you would almost always be okay using this, I always recommend to CHECK what you downloaded from **choco.run** (step 2 in the user guide) before you run commands as an Administrator! But then again, do you ever check chocolatey.org when you run choco commands as Administrator?
-    -   And besides, my supporters support this project handsomely...
--   **How can I support this project?**
-	- **Star** this project on GitHub so I see someone is out there
-	- I'm not trying to make a profit, just make things easier for everyone. If you'd like to donate anyway click the Ko-fi link at the top of this readme.
+The URL [choco.run](https://choco.run) always redirects to the [latest code-signed release](https://github.com/asheroto/choco.run/releases/latest/download/install.ps1) of the script.
