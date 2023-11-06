@@ -44,4 +44,6 @@ If you still have an issue, open up a web browser and navigate to [manual.choco.
 
 ![meme](https://raw.githubusercontent.com/asheroto/choco.run/master/meme.jpg)
 
-The URL [choco.run](https://choco.run) always redirects to the [latest code-signed release](https://github.com/asheroto/choco.run/releases/latest/download/install.ps1) of the script.
+The URL [choco.run](https://choco.run) redirects to the [latest code-signed release](https://github.com/asheroto/choco.run/releases/latest/download/install.ps1) of the script.
+
+The URL [alt.choco.run](https://alt.choco.run) redirects to the [latest code-signed release](https://github.com/asheroto/choco.run/releases/latest/download/install-no-choco-prompts.ps1) of the script without the confirmation prompts when installing, upgrading, or uninstalling a package.
