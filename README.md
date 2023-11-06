@@ -12,7 +12,7 @@ In a hurry? Bad memory? Just want to get some Chocolatey goodness in your machin
 
 Choco.run makes installing Chocolatey easy!
 
-# Usage
+## Usage
 
 Run in PowerShell (as an Administrator):
 
@@ -20,7 +20,7 @@ Run in PowerShell (as an Administrator):
 iwr choco.run | iex
 ```
 
-# Alternate method - disable Chocolatey prompts
+## Alternate method - disable Chocolatey prompts
 
 This method installs Chocolatey but also disables the Yes/No prompts when installing, upgrading, or uninstalling.
 
@@ -30,7 +30,7 @@ Run in PowerShell (as an Administrator):
 iwr alt.choco.run | iex
 ```
 
-# Alternate method, without choco.run
+## Alternate method, without choco.run
 
 Run in PowerShell (as an Administrator):
 
@@ -40,11 +40,11 @@ Set-PSRepository -Name "PSGallery" -InstallationPolicy Trusted
 Install-Module -Name "Chocolatey"
 ```
 
-# Troubleshooting
+## Troubleshooting
 
 If you still have an issue, open up a web browser and navigate to [manual.choco.run](http://manual.choco.run) which redirects to the [official Chocolatey setup page](https://docs.chocolatey.org/en-us/choco/setup).
 
-# The choco.run Inquisition
+## How it works
 
 ![meme](https://raw.githubusercontent.com/asheroto/choco.run/master/meme.jpg)
 
