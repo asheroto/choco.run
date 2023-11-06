@@ -22,15 +22,10 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
 $originalPath = Get-Location
 Set-Location "$env:SystemRoot\Temp"
 
-# Install Chocolatey in a background job
-$job = Start-Job -ScriptBlock {
-    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
-    iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-}
-
-# Wait for the installation job to complete
-Write-Output "Installing Chocolatey in the background..."
-Wait-Job $job | Out-Null
+# Install Chocolatey
+Write-Output "Installing Chocolatey..."
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 # Verify if Chocolatey is installed
 $chocoCommand = Get-Command 'choco' -ErrorAction SilentlyContinue
