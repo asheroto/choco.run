@@ -13,9 +13,9 @@
 #>
 
 # Header
-Write-Output "-------------------------------------------------------------"
+Write-Output ("-" * 80)
 Write-Output "choco.run says hello..."
-Write-Output "-------------------------------------------------------------"
+Write-Output ("-" * 80)
 
 # Set the execution policy to RemoteSigned
 Write-Output "Changing the execution policy to RemoteSigned..."
@@ -27,11 +27,13 @@ Set-Location "$env:SystemRoot\Temp"
 
 # Install Chocolatey
 Write-Output "Installing Chocolatey..."
+Write-Output ("-" * 40)
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
 iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 # Verify if Chocolatey is installed
 $chocoCommand = Get-Command 'choco' -ErrorAction SilentlyContinue
+Write-Output ("-" * 40)
 if ($chocoCommand) {
     Write-Output ""
     Write-Output "Chocolatey has been installed!"
