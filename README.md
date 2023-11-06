@@ -1,3 +1,5 @@
+[![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/asheroto/choco.run)](https://github.com/asheroto/choco.run/releases)
+[![GitHub Downloads - All Releases](https://img.shields.io/github/downloads/asheroto/choco.run/total)](https://github.com/asheroto/choco.run/releases)
 [![GitHub Sponsor](https://img.shields.io/github/sponsors/asheroto?label=Sponsor&logo=GitHub)](https://github.com/sponsors/asheroto?frequency=one-time&sponsor=asheroto)
 <a href="https://ko-fi.com/asheroto"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Ko-Fi Button" height="20px"></a>
 <a href="https://www.buymeacoffee.com/asheroto"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=seb6596&button_colour=FFDD00&font_colour=000000&font_family=Lato&outline_colour=000000&coffee_colour=ffffff](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=asheroto&button_colour=FFDD00&font_colour=000000&font_family=Lato&outline_colour=000000&coffee_colour=ffffff)" height="40px"></a>
@@ -46,6 +48,6 @@ If you still have an issue, open up a web browser and navigate to [manual.choco.
 
 ![meme](https://raw.githubusercontent.com/asheroto/choco.run/master/meme.jpg)
 
-[choco.run](https://choco.run) redirects to the raw version of [install.ps1](https://github.com/asheroto/choco.run/blob/master/install.ps1)
+[choco.run](https://choco.run) redirects to the latest code-signed release of [install.ps1](https://github.com/asheroto/choco.run/releases/latest/download/install.ps1)
 
-[alt.choco.run](https://alt.choco.run) redirects to the raw version of [install-no-choco-prompts.ps1](https://github.com/asheroto/choco.run/blob/master/install-no-choco-prompts.ps1)
+[alt.choco.run](https://alt.choco.run) redirects to the latest code-signed release [install-no-choco-prompts.ps1](https://github.com/asheroto/choco.run/releases/latest/download/install-no-choco-prompts.ps1)
