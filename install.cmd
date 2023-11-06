@@ -1,19 +1,22 @@
 :: choco.run
 :: https://github.com/asheroto/choco.run
 ::
-:: This script installs Chocolatey enables the allowGlobalConfirmation feature.
+:: This script installs Chocolatey and refreshes the environment variables.
 ::
 :: ----------  Usage  ----------
-:: wget alt.choco.run -o c.cmd
-:: .\c.cmd
+:: wget choco.run -o c.ps1
+:: .\c
 :: -----------------------------
+::
+:: Use alt.choco.run if you want to install Chocolatey and enable the allowGlobalConfirmation feature
+:: to prevent Chocolatey from prompting for confirmation when installing packages.
 
 @echo off
 
 :: Header
 echo.
 echo -------------------------------------------------------------
-echo choco.run [alt] says hello...
+echo choco.run says hello...
 echo -------------------------------------------------------------
 echo.
 
@@ -22,7 +25,6 @@ pushd "%SystemRoot%\Temp"
 
 :: Install Chocolatey
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
-@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "choco feature enable -n allowGlobalConfirmation"
 
 :: Adjust the PATH variable so that choco is available
 SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
