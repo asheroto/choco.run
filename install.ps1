@@ -28,7 +28,7 @@ Set-Location "$env:SystemRoot\Temp"
 # Install Chocolatey
 Write-Output "Installing Chocolatey..."
 $installCommand = "[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
-Invoke-Expression -Command $installCommand
+Invoke-Expression -Command $installCommand | Out-Null
 
 # Notify the user that Chocolatey has been installed
 Write-Output "Chocolatey has been installed!"
@@ -36,13 +36,7 @@ Write-Output "Chocolatey has been installed!"
 # Notify the user that they can now use choco in this window
 Write-Output ""
 Write-Output "-------------------------------------------------------------"
-Write-Output "You can start using the 'choco' command in this window!"
-Write-Output "-------------------------------------------------------------"
-
-# Finished
-Write-Output ""
-Write-Output "-------------------------------------------------------------"
-Write-Output "choco.run has finished!"
+Write-Output "You can now use the 'choco' command in this window!"
 Write-Output "-------------------------------------------------------------"
 
 # Return to the original directory
