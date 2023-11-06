@@ -12,6 +12,8 @@ In a hurry? Bad memory? Just want to get some Chocolatey goodness in your machin
 
 Choco.run makes installing Chocolatey easy!
 
+# Usage
+
 Run in PowerShell (as an Administrator):
 
 ```powershell
