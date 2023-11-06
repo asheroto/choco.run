@@ -9,7 +9,7 @@
     iwr alt.choco.run | iex
 
     .NOTES
-    This script will \*not\* prompt for confirmation when installing packages. If you want to be prompted for confirmation, use choco.run instead of alt.choco.run.
+    This script will NOT prompt for confirmation when installing packages. If you want to be prompted for confirmation, use choco.run instead of alt.choco.run.
 #>
 
 # Header
