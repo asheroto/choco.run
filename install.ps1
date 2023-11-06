@@ -18,6 +18,9 @@ Write-Output "choco.run says hello..."
 Write-Output ("-" * 80)
 Write-Output ""
 
+# Remember the current execution policy of the current process
+$originalExecutionPolicy = Get-ExecutionPolicy -Scope Process
+
 # Set the execution policy to Unrestricted (lower than Bypass)
 Write-Output "Changing the execution policy to Unrestricted for the current process..."
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process -Force
@@ -47,3 +50,7 @@ Write-Output ""
 
 # Return to the original directory
 Set-Location $originalPath
+
+# Restore the original execution policy
+Write-Output "Restoring the original execution policy for the current process..."
+Set-ExecutionPolicy -ExecutionPolicy $originalExecutionPolicy -Scope Process -Force
