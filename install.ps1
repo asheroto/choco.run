@@ -1,15 +1,16 @@
 <#
-    .SYNOPSIS
+.SYNOPSIS
     Installs Chocolatey with a simple one-line command.
-
-    .DESCRIPTION
+.DESCRIPTION
     This PowerShell script facilitates the installation of Chocolatey with a simple one-line command.
-
-    .EXAMPLE
+.EXAMPLE
     iwr choco.run | iex
-
-    .NOTES
-    This script prompts for confirmation when managing packages. To install packages without confirmation prompts, use alt.choco.run instead of choco.run.
+.NOTES
+    Version      : 2.0.0
+    Author       : asheroto
+    Tags         : windows install command script powershell installer chocolatey choco automatic installation auto run no-prompt
+.LINK
+	Project Site: https://github.com/asheroto/choco.run
 #>
 
 # Header

@@ -1,12 +1,16 @@
 <#
-    .SYNOPSIS
+.SYNOPSIS
     Installs Chocolatey and disables confirmation prompts with a simple one-line command.
-
-    .DESCRIPTION
+.DESCRIPTION
     This PowerShell script facilitates the installation of Chocolatey and disables confirmation prompts for package installations, upgrades, and removals, with a simple one-line command.
-
-    .EXAMPLE
+.EXAMPLE
     iwr alt.choco.run | iex
+.NOTES
+    Version      : 2.0.0
+    Author       : asheroto
+    Tags         : windows install command script powershell installer chocolatey choco automatic installation auto run no-prompt
+.LINK
+	Project Site: https://github.com/asheroto/choco.run
 #>
 
 # Header
