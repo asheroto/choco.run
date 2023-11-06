@@ -10,7 +10,7 @@
     Author       : asheroto
     Tags         : windows install command script powershell installer chocolatey choco automatic installation auto run no-prompt
 .LINK
-	Project Site: https://github.com/asheroto/choco.run
+	https://github.com/asheroto/choco.run
 #>
 
 # Header
