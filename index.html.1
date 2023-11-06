@@ -19,16 +19,13 @@ Write-Output "-------------------------------------------------------------"
 Write-Output "choco.run says hello..."
 Write-Output "-------------------------------------------------------------"
 
-# Set the execution policy to RemoteSigned
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process -Force
-
 # Set the temp dir to the system temp dir
 $originalPath = Get-Location
 Set-Location "$env:SystemRoot\Temp"
 
-# Install Chocolatey
-$installCommand = "[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
-Invoke-Expression -Command $installCommand
+# Install Chocolatey with RemoteSigned execution policy
+$installScript = "[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
+Invoke-Expression -Command "powershell -NoProfile -ExecutionPolicy RemoteSigned -Command $installScript"
 
 # Notify the user that Chocolatey has been installed
 Write-Output "Chocolatey has been installed!"
