@@ -38,7 +38,7 @@ Install-Module -Name "Chocolatey"
 
 # Troubleshooting
 
-If you still have an issue, open up a web browser and navigate to [manual.choco.run](http://manual.choco.run). This is a link to the Chocolatey setup instructions page.
+If you still have an issue, open up a web browser and navigate to [manual.choco.run](http://manual.choco.run) which redirects to the [official Chocolatey setup page](https://docs.chocolatey.org/en-us/choco/setup).
 
 # The choco.run Inquisition
 
