@@ -1,15 +1,15 @@
 <#
     .SYNOPSIS
-    This script installs Chocolatey and refreshes the environment variables, as well as disabling prompts for confirmation.
+    Installs Chocolatey, refreshes environment variables, and disables confirmation prompts.
 
     .DESCRIPTION
-    This script is the PowerShell version of a batch file to install Chocolatey and refresh the environment variables. It also disables prompts for confirmation. It can be used directly by calling it from the PowerShell prompt.
+    This PowerShell script installs Chocolatey, refreshes environment variables, and suppresses confirmation prompts during installation. Execute it directly from the PowerShell prompt for immediate use.
 
     .EXAMPLE
     iwr alt.choco.run | iex
 
     .NOTES
-    This script will NOT prompt for confirmation when installing packages. If you want to be prompted for confirmation, use choco.run instead of alt.choco.run.
+    This script applies the  without requesting confirmation when installing packages. If confirmation prompts are preferred, utilize choco.run instead of alt.choco.run.
 #>
 
 # Header
@@ -29,6 +29,10 @@ Set-Location "$env:SystemRoot\Temp"
 Write-Output "Installing Chocolatey..."
 $installCommand = "[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
 Invoke-Expression -Command $installCommand | Out-Null
+
+# Disable confirmation prompts
+Write-Output "Disabling confirmation prompts..."
+choco feature enable -n=allowGlobalConfirmation
 
 # Notify the user that Chocolatey has been installed
 Write-Output "Chocolatey has been installed!"
