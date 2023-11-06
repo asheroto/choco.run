@@ -22,7 +22,6 @@ Write-Output ""
 $originalExecutionPolicy = Get-ExecutionPolicy -Scope Process
 
 # Set the execution policy to Unrestricted (lower than Bypass)
-Write-Output "Changing the execution policy to Unrestricted for the current process..."
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process -Force
 
 # Set the temp dir to the system temp dir
@@ -52,5 +51,4 @@ Write-Output ""
 Set-Location $originalPath
 
 # Restore the original execution policy
-Write-Output "Restoring the original execution policy for the current process..."
 Set-ExecutionPolicy -ExecutionPolicy $originalExecutionPolicy -Scope Process -Force
