@@ -6,7 +6,7 @@
 
 # Install Chocolatey in one simple line
 
-![screenshot](https://github.com/asheroto/choco.run/assets/49938263/6f5cee70-f68a-4fbf-a271-6631a7ff15e0)
+https://github.com/asheroto/choco.run/assets/49938263/34594651-3f19-416f-a590-24c641529afa
 
 In a hurry? Bad memory? Just want to get some Chocolatey goodness in your machine?
 
