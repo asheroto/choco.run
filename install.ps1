@@ -38,11 +38,9 @@ Wait-Job $job | Out-Null
 # Verify if Chocolatey is installed
 $chocoCommand = Get-Command 'choco' -ErrorAction SilentlyContinue
 if ($chocoCommand) {
-    Write-Output "Chocolatey has been installed!"
     Write-Output ""
-    Write-Output "-------------------------------------------------------------"
+    Write-Output "Chocolatey has been installed!"
     Write-Output "You can now use the 'choco' command in this window!"
-    Write-Output "-------------------------------------------------------------"
 } else {
     Write-Output "An error may have occurred. 'choco' command is not accessible."
 }
