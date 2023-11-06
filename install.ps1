@@ -20,7 +20,7 @@ Write-Output "choco.run says hello..."
 Write-Output "-------------------------------------------------------------"
 
 # Set the execution policy to RemoteSigned
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process -Force
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
 
 # Set the temp dir to the system temp dir
 $originalPath = Get-Location
