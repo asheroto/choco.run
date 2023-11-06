@@ -27,13 +27,13 @@ Set-Location "$env:SystemRoot\Temp"
 
 # Install Chocolatey
 Write-Output "Installing Chocolatey..."
-Write-Output ("-" * 40)
+Write-Output ("-" * 60)
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
 iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 # Verify if Chocolatey is installed
 $chocoCommand = Get-Command 'choco' -ErrorAction SilentlyContinue
-Write-Output ("-" * 40)
+Write-Output ("-" * 60)
 if ($chocoCommand) {
     Write-Output ""
     Write-Output "Chocolatey has been installed!"
@@ -41,6 +41,7 @@ if ($chocoCommand) {
 } else {
     Write-Output "An error may have occurred. 'choco' command is not accessible."
 }
+Write-Output ""
 
 # Return to the original directory
 Set-Location $originalPath
