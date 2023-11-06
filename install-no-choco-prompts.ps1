@@ -1,15 +1,15 @@
 <#
     .SYNOPSIS
-    This script installs Chocolatey and refreshes the environment variables.
+    This script installs Chocolatey and refreshes the environment variables, as well as disabling prompts for confirmation.
 
     .DESCRIPTION
-    This script is the PowerShell version of a batch file to install Chocolatey and refresh the environment variables. It can be used directly by calling it from the PowerShell prompt.
+    This script is the PowerShell version of a batch file to install Chocolatey and refresh the environment variables. It also disables prompts for confirmation. It can be used directly by calling it from the PowerShell prompt.
 
     .EXAMPLE
-    iwr choco.run | iex
+    iwr alt.choco.run | iex
 
     .NOTES
-    This script will prompt for confirmation when installing packages. If you do not want to be prompted for confirmation, use alt.choco.run instead of choco.run.
+    This script will \*not\* prompt for confirmation when installing packages. If you want to be prompted for confirmation, use choco.run instead of alt.choco.run.
 #>
 
 # Header
