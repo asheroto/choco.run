@@ -13,6 +13,7 @@
 Write-Output ("-" * 80)
 Write-Output "choco.run says hello..."
 Write-Output ("-" * 80)
+Write-Output ""
 
 # Set the execution policy to RemoteSigned
 Write-Output "Changing the execution policy to RemoteSigned..."
@@ -24,6 +25,7 @@ Set-Location "$env:SystemRoot\Temp"
 
 # Install Chocolatey
 Write-Output "Installing Chocolatey..."
+Write-Output ""
 Write-Output ("-" * 60)
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
 iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
