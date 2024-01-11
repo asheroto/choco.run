@@ -17,7 +17,7 @@ Choco.run makes installing Chocolatey easy!
 Run in PowerShell (as an Administrator):
 
 ```powershell
-iwr choco.run | iex
+irm choco.run | iex
 ```
 
 ## Alternate method - disable Chocolatey prompts
@@ -27,7 +27,7 @@ This method installs Chocolatey but also disables the Yes/No prompts when instal
 Run in PowerShell (as an Administrator):
 
 ```powershell
-iwr alt.choco.run | iex
+irm alt.choco.run | iex
 ```
 
 ## Alternate method, without choco.run
@@ -42,7 +42,7 @@ Install-Module -Name "Chocolatey"
 
 ## Troubleshooting
 
-If you still have an issue, open up a web browser and navigate to [manual.choco.run](http://manual.choco.run) which redirects to the [official Chocolatey setup page](https://docs.chocolatey.org/en-us/choco/setup).
+If you still have an issue, open up a web browser and navigate to [manual.choco.run](https://manual.choco.run) which redirects to the [official Chocolatey setup page](https://docs.chocolatey.org/en-us/choco/setup).
 
 ## How it works
 
