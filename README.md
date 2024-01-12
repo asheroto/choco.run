@@ -40,14 +40,26 @@ Set-PSRepository -Name "PSGallery" -InstallationPolicy Trusted
 Install-Module -Name "Chocolatey"
 ```
 
-## Troubleshooting
-
-If you still have an issue, open up a web browser and navigate to [manual.choco.run](https://manual.choco.run) which redirects to the [official Chocolatey setup page](https://docs.chocolatey.org/en-us/choco/setup).
-
 ## How it works
 
 ![meme](https://raw.githubusercontent.com/asheroto/choco.run/master/meme.jpg)
 
-[choco.run](https://choco.run) redirects to the [latest code-signed release](https://github.com/asheroto/choco.run/releases/latest/download/install.ps1) of [install.ps1](https://github.com/asheroto/choco.run/blob/master/install.ps1)
+[choco.run](https://choco.run) redirects to the [latest code-signed release](https://github.com/asheroto/choco.run/releases/latest/download/install.ps1) of [install.ps1](https://github.com/asheroto/choco.run/blob/master/install.ps1). It detects the user agent that the request is coming from and serves either the PowerShell script or redirects to the GitHub repository.
 
-[alt.choco.run](https://alt.choco.run) redirects to the [latest code-signed release](https://github.com/asheroto/choco.run/releases/latest/download/install-no-choco-prompts.ps1) of [install.ps1](https://github.com/asheroto/choco.run/blob/master/install-no-choco-prompts.ps1)
+[alt.choco.run](https://alt.choco.run) redirects to the [latest code-signed release](https://github.com/asheroto/choco.run/releases/latest/download/install-no-choco-prompts.ps1) of [install.ps1](https://github.com/asheroto/choco.run/blob/master/install-no-choco-prompts.ps1).
+
+## Troubleshooting
+
+If you need to install Chocolatey and for some reason the above commands are not working, you can always go to [manual.choco.run](https://manual.choco.run) which redirects to the [official Chocolatey setup page](https://docs.chocolatey.org/en-us/choco/setup).
+
+If when you download the script you see HTML instead of PowerShell code, you can use the following URL to force a the PS1 script download (see [How it Works](#how-it-works)):
+
+```powershell
+irm choco.run/install | iex
+```
+
+or for the alternate method:
+
+```powershell
+irm alt.choco.run/install | iex
+```
