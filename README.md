@@ -42,7 +42,7 @@ Install-Module -Name "Chocolatey"
 
 ## How it works
 
-![meme](https://raw.githubusercontent.com/asheroto/choco.run/master/meme.jpg)
+![meme](https://github.com/asheroto/choco.run/assets/49938263/aad38ba1-37da-442e-b29a-c0b6d1f5d45d)
 
 [choco.run](https://choco.run) redirects to the [latest code-signed release](https://github.com/asheroto/choco.run/releases/latest/download/install.ps1) of [install.ps1](https://github.com/asheroto/choco.run/blob/master/install.ps1). It detects the user agent that the request is coming from and redirects to either the PowerShell script or redirects to the GitHub repository. With this method, PowerShell sees the script, and your web browser sees the repository.
 
